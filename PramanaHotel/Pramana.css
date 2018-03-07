@@ -1,0 +1,167 @@
+html
+{
+  overflow-y: scroll;
+  color: white;
+}
+
+body
+{
+  background-color: black;
+  font-family: arial;
+  text-align: justify;
+}
+
+img
+{
+  display: block;
+  margin: 0 auto;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: white;
+}
+
+a:hover
+{
+  color: blue;
+}
+
+ul
+{
+  margin-bottom: 20px;
+}
+
+ul#navigation li
+{
+  display: inline-block;
+  margin-left: 250px;
+}
+
+#BookHeaderFinal, #SuccessMessage
+{
+  text-align: center;
+  font-size: 25px;
+}
+
+#Home
+{
+  color: white;
+  display: block;
+}
+
+#Facility
+{
+  color: white;
+  display: block;
+}
+
+#BookRoom
+{
+  color: white;
+  display: block;
+}
+
+#Content
+{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#Yoga
+{
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#Kumbuh
+{
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#Pool
+{
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#Spa
+{
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#BusinessCenter
+{
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#Lounge
+{
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#GeneralFacilities
+{
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#BookHeader
+{
+  text-align: center;
+}
+
+table
+{
+  margin: 0 auto;
+}
+
+table, th, td
+{
+    border: 1px solid white;
+    border-collapse:collapse;
+    width: 50%;
+}
+
+input, select
+{
+  text-align: left;
+}
+
+tr, th, td
+{
+    padding: 20px;
+}
+
+#Footer
+{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.nameBox, .emailBox, .phoneBox,
+.inBox, .stayBox, .roomBox
+{
+  width: 100%;
+}
+
+.submitButton
+{
+  margin-left: 260px;
+}
