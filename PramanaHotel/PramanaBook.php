@@ -2,57 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="Pramana.css">
-  <script>
-  function validateForm()
-  {
-    var formName = document.forms["bookingForm"]["name"].value;
-    var formEmail = document.forms["bookingForm"]["email"].value;
-    var formPhone = document.forms["bookingForm"]["phone"].value;
-    var formLength = document.forms["bookingForm"]["stayLength"].value;
-
-    if (formName == "")
-    {
-      alert("Please fill the name field");
-      return false;
-    }
-
-    else if (formEmail == "")
-    {
-      alert("Please fill the Email field");
-      return false;
-    }
-
-    else if (formPhone == "")
-    {
-      alert("Please fill the Phone field");
-      return false;
-    }
-
-    else if (formLength == "")
-    {
-      alert("Please fill the Stay Length field");
-      return false;
-    }
-
-    else if(formPhone.Length < 9 || formPhone.Length > 12)
-    {
-      alert("Phone Number should be more than 10 digit and less than 12 digits");
-      return false;
-    }
-
-    else if(formLength < 1)
-    {
-      alert("Value should at least be 1");
-      return false;
-    }
-
-    else
-    {
-
-    }
-
-  }
-  </script>
+  <script type="text/javascript" src="Pramana.js"></script>
   <title>Pramana Hotel & Resort - Book Room</title>
 </head>
 <body>
