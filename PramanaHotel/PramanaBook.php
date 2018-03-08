@@ -22,31 +22,37 @@
       </tr>
       <tr>
         <th>Name</th>
+        <!-- <td><input type="text" name="name" class="nameBox" required></td> -->
         <td><input type="text" name="name" class="nameBox"></td>
       </tr>
       <tr>
         <th>Email</th>
+        <!-- <td><input type="email" name="email" class="emailBox" required></td> -->
         <td><input type="email" name="email" class="emailBox"></td>
       </tr>
       <tr>
         <th>Phone</th>
+        <!-- <td><input type="number" name="phone" class="phoneBox" required></td> -->
         <td><input type="number" name="phone" class="phoneBox"></td>
       </tr>
       <tr>
-        <th>Stay-in Date</th>
+        <th>Check-in Date</th>
         <td>
+          <!-- <input type="date" name="stayInDate" class="inBox" required> -->
           <input type="date" name="stayInDate" class="inBox">
         </td>
       </tr>
       <tr>
         <th>Length of Stay (days)</th>
+        <!-- <td><input type="number" name="stayLength" class="stayBox" required></td> -->
         <td><input type="number" name="stayLength" class="stayBox"></td>
           ></td>
       </tr>
       <tr>
         <th>Room Type</th>
         <td>
-          <select class="roomBox" required>
+          <!-- <select class="roomBox" name="chooseRoom" required> -->
+          <select class="roomBox" name="chooseRoom">
             <option value="">Select One</option>
             <option value="DeluxeRoom">Deluxe Room – $ 274</option>
             <option value="DeluxePool">Deluxe Pool Villa – $438</option>

@@ -4,7 +4,8 @@ function validateForm()
   let formEmail = document.forms["bookingForm"]["email"].value;
   let formPhone = document.forms["bookingForm"]["phone"].value;
   let formLength = document.forms["bookingForm"]["stayLength"].value;
-
+  let formRoom = document.forms["bookingForm"]["chooseRoom"].value;
+  
   if (formName == "")
   {
     alert("Please fill the name field");
@@ -26,6 +27,12 @@ function validateForm()
   else if (formLength == "")
   {
     alert("Please fill the Stay Length field");
+    return false;
+  }
+
+  else if (formRoom == "")
+  {
+    alert("Choose one room");
     return false;
   }
 
