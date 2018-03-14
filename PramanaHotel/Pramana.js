@@ -5,7 +5,25 @@ function validateForm()
   let formPhone = document.forms["bookingForm"]["phone"].value;
   let formLength = document.forms["bookingForm"]["stayLength"].value;
   let formRoom = document.forms["bookingForm"]["chooseRoom"].value;
-  
+  let formDate = document.forms["bookingForm"]["stayInDate"].value;
+
+  let today = new Date();
+  let yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1; //January is 0!
+  let dd = today.getDate();
+
+  if(dd < 10)
+  {
+    dd = '0'+ dd
+  }
+
+  if(mm < 10)
+  {
+    mm = '0'+ mm
+  }
+
+  today = yyyy + '-' + mm + '-' + dd;
+
   if (formName == "")
   {
     alert("Please fill the name field");
@@ -21,6 +39,12 @@ function validateForm()
   else if (formPhone == "")
   {
     alert("Please fill the Phone field");
+    return false;
+  }
+
+  else if (formDate < today)
+  {
+    alert("Please insert a valid date");
     return false;
   }
 

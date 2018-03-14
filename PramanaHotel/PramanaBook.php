@@ -15,7 +15,7 @@
   </ul>
     <hr>
     <br>
-    <form name="bookingForm" action='PramanaBookSuccess.php' onsubmit="return validateForm()" method="post">
+    <form name="bookingForm" action='PramanaBookAdd.php' onsubmit="return validateForm()" method="post">
     <table style="width:50%">
       <tr>
         <th id="BookHeader" colspan="2">BOOK ROOM</th>
@@ -54,19 +54,19 @@
           <!-- <select class="roomBox" name="chooseRoom" required> -->
           <select class="roomBox" name="chooseRoom">
             <option value="">Select One</option>
-            <option value="DeluxeRoom">Deluxe Room – $ 274</option>
-            <option value="DeluxePool">Deluxe Pool Villa – $438</option>
-            <option value="1Bed">1 Bedroom Pool Villa – $525</option>
-            <option value="2Bed">2 Bedroom Pool Villa - $635</option>
+            <option value="1">Deluxe Room – $ 274</option>
+            <option value="2">Deluxe Pool Villa – $438</option>
+            <option value="3">1 Bedroom Pool Villa – $525</option>
+            <option value="4">2 Bedroom Pool Villa - $635</option>
           </select>
         </td>
       </tr>
       <tr>
         <th>Additional Charge</th>
         <td>
-          <input type="checkbox" name="charge1" value="extraBed">Extra Bed - $80<br>
-          <input type="checkbox" name="charge2" value="shuttle">Airport Shuttle - $40<br>
-          <input type="checkbox" name="charge3" value="tour">Ubud Tour 1D - $100
+          <input type="checkbox" name="charge1">Extra Bed - $80<br>
+          <input type="checkbox" name="charge2">Airport Shuttle - $40<br>
+          <input type="checkbox" name="charge3">Ubud Tour 1D - $100
         </td>
       </tr>
       <th colspan="2">
@@ -79,5 +79,6 @@
       <?php include 'footer.php';
       ?>
     </div>
+
 </body>
 </html>
